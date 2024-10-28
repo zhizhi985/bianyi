@@ -33,6 +33,9 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
+    - name: Clone OpenWrt repo
+      run: git clone --depth=1 https://github.com/openwrt/openwrt.git
+
     - name: Checkout
       uses: actions/checkout@main
 
